@@ -17,5 +17,4 @@ while True:
     channel.basic_publish(exchange='', routing_key='letterbox', body=message)
     print(f'Sent message: {message}')
     time.sleep(random.randint(1, 4))
-    
     message_id += 1
